@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Dio.me - HTML na prática</title>
+    <style>
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #410c0c;
+            line-height: 1.6;
+            
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+        }
+        table tr:nth-child(even)  td {
+            background-color: #f2f2f2;
+
+        }
+        table tr:hover td {
+            background-color: #95b4a6;
+            cursor: pointer;
+        }
+    </style>
+</head>
+    <body>
+        <header>
+            <h1>HTML na prática</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Sobre o Desafio</h2>
+                <p>Este é um desafio prático de HTML, onde aplicamos conceitos básicos de estruturação de páginas web, ensinados até o momento.</p>
+            </section>
+            <section>
+                <h2>Objetivos</h2>
+                <ul>
+                    <li><a href="#aprender">Aprender a criar uma estrutura básica de HTML</a></li>
+                    <li><a href="#tags-semanticas">Utilizar tags semânticas corretamente</a></li>
+                    <li><a href="#imagens-listas">Incluir imagens e listas</a></li>
+                    <li><a href="#tabelas-formularios">Implementar tabelas e formulários</a></li>
+
+                </ul>
+                <h3 id="aprender">Aprender a criar uma estrutura básica de HTML</h3>
+                <p>Para criar uma estrutura básica de HTML, devemos utilizar as tags essenciais como &lt;html&gt;, &lt;head&gt; e &lt;body&gt;. Essas tags formam a espinha dorsal de qualquer página web e são fundamentais para a organização do conteúdo.</p>
+                <h4><strong>Exemplo de estrutura básica:</strong></h4>
+                <ul>
+                    
+                    <li>&lt;!DOCTYPE html&gt;: Informa ao navegador que o documento é HTML5.</li>
+                    <li>&lt;html lang="pt"&gt;: Começa o HTML e define o idioma como português.</li>
+                    <li>&lt;head&gt;: Contém informações da página (como o título).</li>
+                    <li>&lt;meta charset="UTF-8"&gt;: Garante que os acentos e caracteres especiais apareçam corretamente.</li>
+                    <li>&lt;title&gt;: Nome da aba no navegador.</li>
+                    <li>&lt;body&gt;: Onde fica o conteúdo visível da página (textos, imagens, etc.).</li>
+                </ul>
+
+                <h3 id="tags-semanticas">Utilizar tags semânticas corretamente</h3>
+                <p>As tags semânticas são importantes para a acessibilidade e SEO. Devemos utilizar tags como &lt;header&gt;, &lt;footer&gt;, &lt;article&gt; e &lt;section&gt; para estruturar nosso conteúdo de forma significativa. O porquê de usar essas tags é que elas ajudam os motores de busca a entenderem melhor o conteúdo da página, além de facilitar a navegação para pessoas com deficiência.</p>
+                <ul>
+                    <li>&lt;header&gt;: Cabeçalho da página, geralmente contém o título e a navegação.</li>
+                    <li>&lt;footer&gt;: Rodapé da página, onde ficam informações de contato e direitos autorais.</li>
+                    <li>&lt;article&gt;: Representa um conteúdo independente, como um post de blog.</li>
+                    <li>&lt;section&gt;: Agrupa conteúdos relacionados dentro de uma página.</li>
+                </ul>
+                <h3 id="imagens-listas">Incluir imagens e listas</h3>
+                <p>Para incluir imagens, usamos a tag &lt;img&gt; com o atributo src para especificar o caminho da imagem. As listas podem ser ordenadas (&lt;ol&gt;) ou não ordenadas (&lt;ul&gt;), e cada item da lista é definido com a tag &lt;li&gt;.</p>
+                <ul>
+                    <li>&lt;img src="caminho/para/imagem.jpg" alt="Descrição da imagem"&gt;: Insere uma imagem na página.</li>
+                    <li>&lt;ul&gt;: Cria uma lista não ordenada.</li>
+                    <li>&lt;ol&gt;: Cria uma lista ordenada.</li>
+                    <li>&lt;li&gt;: Define um item de lista.</li>
+                </ul>
+                <img src="html-exemplo.webp" alt="Exemplo de código HTML" style="max-width: 100%; height: auto;">
+                <h3 id="tabelas-formularios">Implementar tabelas e formulários</h3>
+                <p>As tabelas são criadas com a tag &lt;table&gt;, e cada linha é definida com &lt;tr&gt;. As células são criadas com &lt;td&gt; para dados e &lt;th&gt; para cabeçalhos. Os formulários são criados com a tag &lt;form&gt;, e os campos de entrada são definidos com tags como &lt;input&gt;, &lt;textarea&gt;, e &lt;button&gt;.</p>
+                <ul>    
+                    <li>&lt;table&gt;: Cria uma tabela.</li>
+                    <li>&lt;tr&gt;: Define uma linha na tabela.</li>
+                    <li>&lt;td&gt;: Define uma célula de dados na tabela.</li>
+                    <li>&lt;th&gt;: Define um cabeçalho de tabela.</li>
+                    <li>&lt;form&gt;: Cria um formulário para entrada de dados.</li>
+                    <li>&lt;input&gt;: Campo de entrada de dados (texto, senha, etc.).</li>
+                    <li>&lt;textarea&gt;: Área de texto para entradas maiores.</li>
+                    <li>&lt;button&gt;: Botão para enviar o formulário ou executar ações.</li>
+                
+                </ul>
+                <h4><strong>Exemplos:</strong></h4>
+
+                <table border="1" style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                        <td>Rio de Janeiro</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>22</td>
+                        <td>Belo Horizonte</td>
+                </table>
+                
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
+</html>
